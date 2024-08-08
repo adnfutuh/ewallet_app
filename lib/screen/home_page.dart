@@ -1,3 +1,4 @@
+import 'package:ewallet_app/widget/item_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -114,6 +115,30 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   )
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(top: 30),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ItemWidget(
+                    icon: Icons.send_rounded,
+                    text: "Kirim",
+                  ),
+                  ItemWidget(
+                    icon: Icons.account_balance_wallet,
+                    text: "Terima",
+                  ),
+                  ItemWidget(
+                    icon: Icons.payment,
+                    text: "Bayar",
+                  ),
+                  ItemWidget(
+                    icon: Icons.more_horiz,
+                    text: "Lainnnya",
+                  ),
                 ],
               ),
             )
