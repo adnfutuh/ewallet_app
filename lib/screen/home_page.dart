@@ -1,4 +1,5 @@
 import 'package:ewallet_app/models/transaction.dart';
+import 'package:ewallet_app/screen/transaction_detail.dart';
 import 'package:ewallet_app/widgets/item_transaction.dart';
 import 'package:ewallet_app/widgets/item_widget.dart';
 import 'package:flutter/material.dart';
@@ -173,7 +174,15 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              showModalBottomSheet(
+                                context: context,
+                                isScrollControlled: true,
+                                builder: (BuildContext ctx) {
+                                  return const TransactionDetail();
+                                },
+                              );
+                            },
                             child: const Text(
                               'Lihat Semua',
                               textAlign: TextAlign.right,
