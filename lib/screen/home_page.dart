@@ -1,4 +1,4 @@
-import 'package:ewallet_app/widget/item_widget.dart';
+import 'package:ewallet_app/widgets/item_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
